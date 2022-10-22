@@ -9,7 +9,7 @@ router.get('/google',
 router.get('/callback',
   passport.authenticate('google', { failureRedirect: '/user/no-permission' }),
   (req, res) => {
-    res.redirect('/user/logged');
+      res.redirect('/user/logged');
   }
 );
 

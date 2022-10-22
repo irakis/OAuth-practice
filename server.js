@@ -13,7 +13,7 @@ app.engine('hbs', hbs({ extname: 'hbs', layoutsDir: './layouts', defaultLayout: 
 app.set('view engine', '.hbs');
 
 // init session mechanism
-app.use(session({ secret: 'anything', resave: true, saveUninitialized: true }));
+app.use(session({ secret: 'anything', resave: false, saveUninitialized: false }));
 
 // init passport
 app.use(passport.initialize());
